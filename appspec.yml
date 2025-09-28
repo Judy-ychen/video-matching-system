@@ -1,0 +1,12 @@
+version: 0.0
+os: windows
+
+files:
+  - source: /
+    destination: D:\CS\video-matching-system
+
+hooks:
+  ApplicationStop:
+    - location: scripts\application_stop.bat
+      timeout: 60
+
