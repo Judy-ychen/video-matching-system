@@ -4,19 +4,19 @@ os: linux
 # Copy everything from the bundle into /opt/myapp (adjust to your app path)
 files:
   - source: /
-    destination: /opt/myapp
+    destination: /opt/video-matching-system
     overwrite: true
 
 # Optional: fix ownership/permissions after files land
 permissions:
-  - object: /opt/myapp
+  - object: /opt/video-matching-system
     pattern: "**"
     owner: ec2-user
     group: ec2-user
     mode: 755
     type:
       - file
-  - object: /opt/myapp
+  - object: /opt/video-matching-system
     pattern: "**/"
     owner: ec2-user
     group: ec2-user
